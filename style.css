@@ -12,7 +12,7 @@ nav{
   align-items: center;
   background: #ccc;
   height: 50px;
-  padding-right: 5px;
+  padding: 0 10px;
 
   span{
     color: #028b1b;
@@ -322,4 +322,5 @@ button:hover {
       display: block;
       
     }
+
   }
