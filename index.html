@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sidebar</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav>
+    <div class="logo">IDDICO <span>ENT.</span></div>
+    <input type="checkbox" id="sidebarActive">
+
+      <label for="sidebarActive" class="opensidebar" id="openSidebar">
+        <div></div>
+        <div></div>
+        <div></div>
+      </label>
+      <label for="sidebarActive" id="overlay"></label>
+      <ul>
+
+      <div class="sidebar">
+        <label for="sidebarActive" class="closesidebar">&times;</label>
+        <img src="iddico-removebg-preview.png" width="200" style="text-align: center;">
+        <!-- <li class="logo"><a href="#Home">IDDICO <span>ENT.</span></a></li> -->
+        <li><a href="#Home">Home</a></li>
+        <li><a href="#Services">Services</a></li>
+        <li><a href="#Reservation">Reservation</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#location">Location</a></li>
+      </div>
+    </ul>
+  </nav>
+ 
+
+<!-- HOME / HERO SECTION -->
+<section id="home" class="hero">
+  <h1>Your Home Away From Home</h1>
+  <p>Comfortable rooms • Friendly service • Affordable rates</p>
+  <a href="#booking" class="button">Book Your Stay Online</a>
+  <a href="https://wa.me/233248805934" class="button"
+         style="display: inline-block; padding: 12px 25px; background: #2a8f2a; color: white; text-decoration: none; border-radius: 6px; font-size: 16px;">
+         Book Now On WhatsApp
+      </a>
+</section>
+
+<section id="Home">
+  <div class="hero-section">
+    <div class="hero-content">
+      <img src="iddico-removebg-preview.png" width="240" alt="">
+        <p>Welcome to our guest house — your home away from home.
+  Enjoy a peaceful and comfortable stay in our cozy, well-appointed rooms designed for relaxation.  We offer modern amenities, warm hospitality, and a serene environment perfect for both short visits and extended stays. Whether you're traveling for business or leisure, our guest house provides the comfort and convenience you deserve.</p>
+        
+    </div>
+  </div>
+</section>
+
+<section id="Services">
+  <div class="service">
+    <h2>Services We Provide To Our Customers</h2>
+    
+    <ol>
+      <li>Accommodation:</li>
+      <p>Comfortable, well-furnished rooms equipped with essential amenities such as beds, wardrobes, private bathrooms, and clean linens to ensure a relaxing stay.</p>
+      <li>Housekeeping:</li>
+      <p>Daily or regular room cleaning, fresh towels, and maintained common areas to keep the environment clean and welcoming.</p>
+      <li>Free Wi-Fi:</li>
+      <p>Reliable internet access throughout the property so guests can stay connected for work, communication, or entertainment.</p>
+      <li>24/7 Reception or On-Call Support:</li>
+      <p>Assistance with check-in/check-out, inquiries, and guest support at any time during the stay.</p>
+      <li>Laundry Services:</li>
+      <p>Washing, drying, and ironing services available on request for long-stay or busy guests.</p>
+      <li>Security:</li>
+      <p>CCTV surveillance, secure entrances, and safety protocols to ensure a safe and comfortable environment for all guests.</p>
+      <li>Common Lounge or Relaxation Area:</li>
+      <p>Shared spaces where guests can unwind, watch TV, socialize, or work comfortably.</p>
+    </ol>
+
+  </div>
+</section>
+
+<!-- ABOUT US -->
+<section id="about">
+  <h2>About Us</h2>
+  <p>
+    Our guest house offers a peaceful, relaxing, and affordable stay for travelers, families, and business visitors.
+    We pride ourselves on comfort, cleanliness, and warm hospitality to make every guest feel at home.
+  </p>
+</section>
+
+<!-- Rooms -->
+
+<section id="Reservation">
+  <h2>Room Rates & Reservations</h2>
+
+  <div style="max-width: 700px; margin: 0 auto;">
+
+    <!-- Standard Room -->
+    <div style="border: 1px solid #ddd; padding: 20px; border-radius: 8px; margin-bottom: 20px;">
+      <h2>Standard Room – GHS 100/night</h2>
+      <p>A clean and comfortable room with AC ideal for budget-friendly stays. Bathroom facilities are shared.</p>
+    </div>
+
+    <!-- En-Suite Room -->
+    <div style="border: 1px solid #ddd; padding: 20px; border-radius: 8px;">
+      <h2>Premium Room – GHS 170/night</h2>
+      <p>A spacious room with a private bathroom, AC and toilet for added comfort and privacy.</p>
+    </div>
+
+    <!-- Booking Button -->
+    <div style="text-align: center; margin-top: 30px;">
+      <a href="https://wa.me/233248805934" 
+         style="display: inline-block; padding: 12px 25px; background: #2a8f2a; color: white; text-decoration: none; border-radius: 6px; font-size: 16px;">
+         Book Now
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<!-- BOOKING FORM -->
+<section id="booking">
+  <h2>Online Reservation</h2>
+  <form action="https://www.formsubmit.co/juniorazigiza@gmail.com" method="POST">
+    <label>Full Name</label>
+    <input type="text" placeholder="Enter your full name" required />
+
+    <label>Phone Number</label>
+    <input type="text" placeholder="Your phone number" required />
+
+    <label>Select Room Type</label>
+    <select required>
+      <option value="">-- Select Room --</option>
+      <option>Standard Room – GHS 100</option>
+      <option>En-Suite Room – GHS 170</option>
+    </select>
+
+    <label>Check-in Date</label>
+    <input type="date" required />
+
+    <label>Check-out Date</label>
+    <input type="date" required />
+
+    <label>Additional Notes (Optional)</label>
+    <textarea placeholder="Any special requests..."></textarea>
+
+    <button type="submit">Submit Reservation</button>
+  </form>
+</section>
+
+<!-- LOCATION WITH GOOGLE MAP -->
+<section id="location">
+  <h2>Find Us</h2>
+  <iframe src="https://maps.app.goo.gl/KuKcZ57eUts1N31t5" allowfullscreen></iframe>
+</section>
+
+<section>
+  <div class="img-sec">
+    <h2 style="text-align: center;">Images</h2>
+    <img src="img1.jpg" alt="">
+    <img src="img2.jpg" alt="">
+    <img src="img3.jpg" alt="">
+    <img src="img4.jpg" alt="">
+  </div>
+</section>
+
+<!-- CONTACT -->
+<footer id="contact">
+  <p>Contact Us: <a href="tel:+233248805934">+233248805934</a> • Iddico Guest House • Location: @360</p>
+  <p>© 2025 Iddico Guest House. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,325 @@
+*{
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  scroll-behavior: smooth;
+}
+nav{
+  /* position: fixed; */
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background: #ccc;
+  height: 50px;
+  padding-right: 5px;
+
+  span{
+    color: #028b1b;
+  }
+}
+nav ul {
+  list-style: none;
+}
+nav li{
+  margin-left: 10px;
+}
+.sidebar{
+  display: flex;
+
+}
+#sidebarActive, .closesidebar{
+  display: none;
+}
+
+.logo{
+  position: absolute;
+  left: 0;
+  font-weight: 900;
+  
+  a{
+    color: #f5540f;
+  }
+}
+
+nav ul li a {
+  text-decoration: none;
+  display: block;
+  color: rgb(25, 25, 25);
+}
+nav ul li a:hover{
+  text-decoration: underline;
+  color: blue;
+  
+}
+nav ul li a:focus{
+color: blue;
+}
+
+.sidebar img{
+  display: none;
+}
+
+section{
+  max-width: 1100px; 
+  margin: auto;
+  margin-bottom: 20px;
+  border: 1px solid #ddd; 
+  padding: 20px; 
+  border-radius: 8px; 
+  background: #f4f4f4;
+  line-height: 30px;
+
+  h2{
+    text-align: center;
+    margin-bottom: 20px;
+  }
+}
+
+.hero-section{
+  max-width: 100%;
+  width: 100%;
+ display: flex;
+ text-align: center;
+}
+
+.hero-content p{
+ text-align-last: left;
+}
+
+.hero {
+   background: url('img1.jpg') center/cover no-repeat; 
+   padding: 120px 20px; 
+   color: white; 
+   text-align: center;
+   }
+
+.hero h1 { 
+  font-size: 48px; 
+  text-shadow: 2px 2px 5px black;
+ }
+
+.hero p { 
+  font-size: 20px; 
+  margin-top: 8px; 
+  margin-bottom: 20px;
+  color: white;
+}
+
+.hero .button { 
+  margin-top: 20px; 
+  padding: 12px 25px; 
+  background: #3871db; 
+  color: white; 
+  text-decoration: none; 
+  border-radius: 8px; 
+  font-size: 18px; 
+}
+
+.hero-content {
+  display: flex;
+  
+}
+
+.service{
+  padding: 20px; 
+  border-radius: 8px; 
+  margin-bottom: 20px;
+
+  li{
+    font-weight: bold;
+    font-size: 1.1em;
+  }
+}
+
+footer { 
+  background: #222; 
+  color: white; 
+  text-align: center; 
+  padding: 30px; 
+  margin-top: 40px; 
+
+  a{
+    text-decoration: none;
+    color: lime;
+  }
+}
+
+iframe { 
+  width: 100%; 
+  border: none; 
+  height: 350px; 
+  border-radius: 10px; 
+}
+
+form { 
+  background: white; 
+  border-radius: 10px; 
+  padding: 25px; 
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1); 
+}
+
+input, select, textarea { 
+  width: 100%; 
+  padding: 12px; 
+  margin-bottom: 20px; 
+  border-radius: 6px; 
+  border: 1px solid #ccc; 
+  font-size: 16px; 
+}
+
+button { 
+  padding: 12px 25px; 
+  background: #222; 
+  color: white; 
+  border: none; 
+  border-radius: 6px; 
+  font-size: 16px; 
+  cursor: pointer; 
+}
+
+button:hover { 
+  background: black; 
+}
+
+.sidebar{
+  margin-left: auto;
+}
+
+.logo{
+  position: absolute;
+  left: 0;
+  user-select: none;
+}
+
+.img-sec{
+  text-align: center;
+
+}
+
+.img-sec img {
+  width: 200px;
+  height: 200px;
+  margin: 8px;
+  border-radius: 5px;
+}
+
+#sidebarActive, .closesidebar{
+  display: none;
+}
+
+
+@media(max-width: 700px) { 
+  .hero h1 { 
+    font-size: 34px; 
+  } 
+  
+
+   }
+
+   @media (max-width: 500px) {
+    .sidebar{
+      position: fixed;
+      top: 0;
+      right: -100%;
+      width: 250px;
+      height: 100%;
+      /* display: none; */
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      background: rgba(0,0,0,0.1);
+      backdrop-filter: blur(10px);
+      transition: .75s;
+      z-index: 100;
+
+    }
+    nav{
+      width: 100%;
+      position: fixed;
+    }
+
+   nav ul{
+      display: block;
+    }
+
+
+    ul li{
+      padding: 10px;
+      
+    }
+    .logo{
+     display: block;
+    }
+
+    .sidebar img{
+      display: block;
+      max-width: 230px;
+      width: 100%;
+      /* margin-left: 40px; */
+
+    }
+
+    .opensidebar{
+      position: absolute;
+      right: 8px;
+      cursor: pointer;
+
+      div{
+        width: 28px;
+        height: 3px;
+        border-radius: 5px;
+        margin: 4px;
+        background: #000;
+      }
+    }
+
+    .closesidebar{
+      display: block;
+      font-size: 1.4em;
+     margin-left: 10px;
+    }
+
+    #sidebarActive:checked ~ ul .sidebar{
+      right: 0;
+    }
+    #sidebarActive:checked ~ .opensidebar{
+      right: 0;
+      opacity: 0;
+    }
+
+    #sidebarActive:checked ~ #overlay{
+      position: absolute;
+      content: '';
+      top: 0;
+      right: 0;
+      width: 100%;
+      height: 100vh;
+      /* background: chocolate; */
+      /* z-index: 1; */
+    }
+
+    h2{
+      font-size: 16px;
+    }
+
+    p{
+      font-size: 12px;
+    }
+
+    .service{
+      padding: 20px; 
+      border-radius: 8px; 
+      margin-bottom: 20px;
+    
+      li{
+        font-weight: bold;
+        font-size: 14px;
+      }
+    }
+
+    .hero-content {
+      display: block;
+      
+    }
+  }
