@@ -35,6 +35,7 @@ nav li{
 .logo{
   position: absolute;
   left: 0;
+  margin-left: 20px;  
   font-weight: 900;
   
   a{
@@ -325,5 +326,6 @@ button:hover {
     }
 
   }
+
 
 
