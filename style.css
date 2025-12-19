@@ -20,6 +20,7 @@ nav{
 }
 nav ul {
   list-style: none;
+  margin-left: 15px;
 }
 nav li{
   margin-left: 10px;
@@ -84,10 +85,6 @@ section{
  text-align: center;
 }
 
-.hero-content p{
- text-align-last: left;
-}
-
 .hero {
    background: url('img1.jpg') center/cover no-repeat; 
    padding: 120px 20px; 
@@ -119,6 +116,10 @@ section{
 
 .hero-content {
   display: flex;
+
+  p{
+    text-align: left;
+  }
   
 }
 
@@ -162,7 +163,7 @@ form {
 
 input, select, textarea { 
   width: 100%; 
-  padding: 0 12px; 
+  padding: 12px 12px; 
   margin-bottom: 20px; 
   border-radius: 6px; 
   border: 1px solid #ccc; 
@@ -190,6 +191,7 @@ button:hover {
 .logo{
   position: absolute;
   left: 0;
+  margin-left: 15px;  
   user-select: none;
 }
 
@@ -323,16 +325,20 @@ button:hover {
     .hero-content {
       display: block;
       
+      p{
+        text-align: left; 
+      }
     }
 
  .img-sec img {
-  width: 3200px;
+  width: 320px;
   height: 320px;
   margin: 8px;
   border-radius: 5px;
      }
 
   }
+
 
 
 
