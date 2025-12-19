@@ -325,7 +325,15 @@ button:hover {
       
     }
 
+ .img-sec img {
+  width: 3200px;
+  height: 320px;
+  margin: 8px;
+  border-radius: 5px;
+     }
+
   }
+
 
 
 
