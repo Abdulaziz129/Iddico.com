@@ -162,7 +162,7 @@ form {
 
 input, select, textarea { 
   width: 100%; 
-  padding: 12px; 
+  padding: 0 12px; 
   margin-bottom: 20px; 
   border-radius: 6px; 
   border: 1px solid #ccc; 
@@ -199,8 +199,8 @@ button:hover {
 }
 
 .img-sec img {
-  width: 200px;
-  height: 200px;
+  width: 320px;
+  height: 320px;
   margin: 8px;
   border-radius: 5px;
 }
@@ -333,6 +333,7 @@ button:hover {
      }
 
   }
+
 
 
 
