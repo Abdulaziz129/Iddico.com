@@ -263,6 +263,7 @@ button:hover {
     .opensidebar{
       position: absolute;
       right: 8px;
+      display: block;
       cursor: pointer;
 
       div{
@@ -324,4 +325,5 @@ button:hover {
     }
 
   }
+
 
